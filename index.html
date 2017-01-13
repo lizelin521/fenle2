@@ -33,21 +33,25 @@
 	}
 	.info{
 		position:relative;
+		border:1px solid red;
+		margin-top:15%;
 		left:-7%;
 	}
 	.info1{
 		position:relative;
-		right:-7%;		
+		right:-7%;	
+		margin-top:14%;	
 	}
 	.cimg p{
+		font-size:12px;
 		padding-top:1em;
 		padding-left:0.5em;
 		padding-right:0.5em;
 		text-indent:2em;
-		line-height:2em;
+		line-height:1.5em;
 	}
 	.cimg img{
-		margin-top:0.3em;
+		margin-top:0.5em;
 	}
 	.imgbox img{
 		padding-top:1em;
@@ -107,21 +111,15 @@
 			营盘山位于衢州城西16公里处石梁镇小沟村大岭背，公元816年，黄巢率义军攻入浙江，曾在此扎营而得名营盘山。营盘山山顶广阔，环周悬崖，状如城垣，仅一个隘口可以登顶。
 	</p>		
 	<img src="images/root.jpg" alt="header"  >
-	<div class="container cimg" >
-		<div class="row">
-			<div class="col-xs-5"  style="">
-				<img src="images/1.3.jpg" alt="header" class="img-circle img-responsive" >
-			</div>
-			<div class="col-xs-7 depadding" >
-				<div class="info">
-					<p>养鸡三十多年，从最开始照着别人的样子养，到后来听从专业意见各种营养配料，直到现在自然散养把鸡养到了云端</p>
-				</div>
-			</div>
-		</div>
+	<div  class="container">
+		<div class="row" id="myrow" style="position:relative;left:0;top:0">
+				<img class="col-xs-5 img-circle img-responsive" src="images/1.3.jpg" alt="header">			
+				<p class="col-xs-7 depadding" style="font-size:12px;position:absolute;top:20%;left:40%;">养鸡三十多年，从最开始照着别人的样子养，到后来听从专业意见各种营养配料，直到现在自然散养把鸡养到了云端</p>	
+	    </div>
 		<div class="row">
 			<div class="col-xs-7 depadding">
 				<div class="info1">
-					<p>丝羽乌骨鸡:从冠、缨头、绿耳、胡须、丝毛、毛脚、五爪、乌皮、乌骨“十大”特征具有极高营养价值和药用价值。</p>
+					<p style="font-size:12px;">丝羽乌骨鸡:从冠、缨头、绿耳、胡须、丝毛、毛脚、五爪、乌皮、乌骨“十大”特征具有极高营养价值和药用价值。</p>
 				</div>
 			</div>
 			<div class="col-xs-5">
@@ -129,21 +127,15 @@
 			</div>
 
 		</div>
-		<div class="row">
-			<div class="col-xs-5"  style="">
-				<img src="images/1.5.jpg" alt="header" class="img-circle img-responsive" >
-			</div>
-			<div class="col-xs-7 depadding" >
-				<div class="info">
-					<p>三小时熬制爷爷的丝羽乌骨鸡，汤色鲜美，家的味道。适合孩子成长、孕妇滋补、老人进补、强身健体。</p>
-				</div>
-			</div>
-		</div>
-	</div>		
+		<div class="row" id="myrow" style="position:relative;left:0;top:0">
+				<img class="col-xs-5 img-circle img-responsive" src="images/1.5.jpg" alt="header">			
+				<p class="col-xs-7 depadding" style="font-size:12px;position:absolute;top:20%;left:40%;">三小时熬制爷爷的丝羽乌骨鸡，汤色鲜美，家的味道。适合孩子成长、孕妇滋补、老人进补、强身健体。</p>	
+	    </div>
+	</div>
 	<img src="images/1.6.jpg" alt="header" class="img-responsive" >
 	<img src="images/root2.png" alt="" class="img-responsive">
 	<img src="images/2.1.jpg" alt="" class="img-responsive">
-	<p class="public">农源人经过多方探寻终于找到了营盘山上的养鸡者，早上农源人天不亮就从杭州出发，驱车三个小时，经过了错路，终于找到了正确的上山路。</p>
+	<p class="public">经过多方探寻发现了营盘山上的养鸡者，为了能在假期之后让大家看见这些鸡，2017年1月1号早上天不亮数据采集员就从杭州出发，驱车3个小时，一番曲折后最终找到了上山路！</p>
 	<img src="images/2.2.jpg" alt="" class="img-responsive">
 	<p class="public">我们在草丛里，树下面寻找着不安分的小鸡!嘘，要轻一点，看又要飞起来了！</p>
 	<div class="container">
@@ -217,23 +209,17 @@
 	<img src="images/4.1.jpg" alt="header" class="img-responsive" >
 	<img src="images/4.2.jpg" alt="header" class="img-responsive" >
 	<div class="video_div">
-		<video id="myvideo" poster="images/5.jpg" style="width:100%;">
+		<video poster="images/5.jpg" src="images/myvideo.mp4" controls="controls" style="width:100%;">
 			您的浏览器不支持 video 标签。
-		</video>
-		<div class="myvideo" id="bigplay"></div>	
+		</video>	
 	</div>
 	<img src="images/4.4.jpg" alt="header" class="img-responsive" >
 	<script type="text/javascript">
 		window.onload=function(){
-			var myVideo=document.getElementById("myvideo");
-
-			var oBtn1=document.getElementById("bigplay");
-			oBtn1.onclick=function(){
-				myVideo.src="images/myvideo.mp4";
-				myVideo.play();
-				myVideo.controls="controls";
-				this.style.display='none';
-			}	
+			// var myrow=document.getElementById("myrow");
+			// var oP=myrow.getElementsByTagName("p")[0];
+			// var h=oP.offsetHeight;			
+			// oP.style.marginTop=(-h)/2+"px";
 		}
 	</script>
 </body>
